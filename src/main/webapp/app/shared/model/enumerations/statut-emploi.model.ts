@@ -1,0 +1,7 @@
+export enum StatutEmploi {
+  TEMPS_PLEIN = 'TEMPS_PLEIN',
+
+  TEMPS_PARTIEL = 'TEMPS_PARTIEL',
+
+  STAGIAIRE = 'STAGIAIRE',
+}

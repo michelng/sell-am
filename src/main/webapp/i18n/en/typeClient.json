@@ -1,0 +1,9 @@
+{
+  "sellAmApp": {
+    "TypeClient": {
+      "null": "",
+      "PARTICULIER": "PARTICULIER",
+      "ENTREPRISE": "ENTREPRISE"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sellAmApp": {
+    "fournisseur": {
+      "home": {
+        "title": "Fournisseurs",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Fournisseur",
+        "createOrEditLabel": "Créer ou éditer un Fournisseur",
+        "notFound": "Aucun Fournisseur trouvé"
+      },
+      "created": "Un nouveau Fournisseur a été créé avec l'identifiant { param }",
+      "updated": "Le Fournisseur avec l'identifiant { param } a été mis à jour",
+      "deleted": "Le Fournisseur avec l'identifiant { param } a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Fournisseur { id } ?"
+      },
+      "detail": {
+        "title": "Fournisseur"
+      },
+      "id": "ID",
+      "identifiant": "Identifiant",
+      "nomResponsable": "Nom Responsable",
+      "raisonSociale": "Raison Sociale",
+      "telephone1": "Telephone 1",
+      "telephone2": "Telephone 2",
+      "email": "Email",
+      "logo": "Logo",
+      "description": "Description",
+      "statut": "Statut"
+    }
+  }
+}

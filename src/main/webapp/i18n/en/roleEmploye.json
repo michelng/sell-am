@@ -1,0 +1,24 @@
+{
+  "sellAmApp": {
+    "roleEmploye": {
+      "home": {
+        "title": "Role Employes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Role Employe",
+        "createOrEditLabel": "Create or edit a Role Employe",
+        "notFound": "No Role Employes found"
+      },
+      "created": "A new Role Employe is created with identifier { param }",
+      "updated": "A Role Employe is updated with identifier { param }",
+      "deleted": "A Role Employe is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Role Employe { id }?"
+      },
+      "detail": {
+        "title": "Role Employe"
+      },
+      "id": "ID",
+      "roleName": "Role Name"
+    }
+  }
+}

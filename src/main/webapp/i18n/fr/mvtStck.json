@@ -1,0 +1,27 @@
+{
+  "sellAmApp": {
+    "mvtStck": {
+      "home": {
+        "title": "MvtStcks",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mvt Stck",
+        "createOrEditLabel": "Créer ou éditer un Mvt Stck",
+        "notFound": "Aucun Mvt Stck trouvé"
+      },
+      "created": "Un nouveau Mvt Stck a été créé avec l'identifiant { param }",
+      "updated": "Le Mvt Stck avec l'identifiant { param } a été mis à jour",
+      "deleted": "Le Mvt Stck avec l'identifiant { param } a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Mvt Stck { id } ?"
+      },
+      "detail": {
+        "title": "Mvt Stck"
+      },
+      "id": "ID",
+      "dateMvnt": "Date Mvnt",
+      "quantite": "Quantite",
+      "typeMvt": "Type Mvt",
+      "article": "Article"
+    }
+  }
+}

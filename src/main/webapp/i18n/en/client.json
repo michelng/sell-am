@@ -1,0 +1,35 @@
+{
+  "sellAmApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Client",
+        "createOrEditLabel": "Create or edit a Client",
+        "notFound": "No Clients found"
+      },
+      "created": "A new Client is created with identifier { param }",
+      "updated": "A Client is updated with identifier { param }",
+      "deleted": "A Client is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Client { id }?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "id": "ID",
+      "identifiant": "Identifiant",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone1": "Telephone 1",
+      "telephone2": "Telephone 2",
+      "email": "Email",
+      "photo": "Photo",
+      "description": "Description",
+      "typeClient": "Type Client",
+      "statut": "Statut",
+      "carteCredit": "Carte Credit",
+      "facture": "Facture"
+    }
+  }
+}

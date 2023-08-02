@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191104",
+  "dto": "mapstruct",
+  "entityTableName": "discount",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "montant",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "Discount",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,11 @@
+id;code;date_commande;date_livraison_prevue;montant_total;commentaire;statut_cmd
+1;brique;2023-08-02T17:29:18;2023-08-02T14:30:22;25226;du Rap Bronze;EN_COURS_DE_TRAITEMENT
+2;Électrique à;2023-08-01T23:43:41;2023-08-02T07:58:10;8888;suffisamment lavallière;EN_ATTENTE_DE_LIVRAISON
+3;malachite Électronique;2023-08-01T21:24:52;2023-08-02T14:09:30;26884;Gants jeune Stagiaire;LIVREE
+4;lutter Est;2023-08-01T22:44:06;2023-08-02T16:37:27;1636;Somalie Homme;LIVREE
+5;Moderne;2023-08-02T15:11:58;2023-08-02T03:58:10;11674;dépôt;LIVREE
+6;Salade Haïti;2023-08-01T19:15:05;2023-08-02T17:17:28;24750;Guinée fraise;EN_COURS_DE_TRAITEMENT
+7;Longtail dissimuler insérer;2023-08-02T00:23:47;2023-08-02T03:34:38;12986;plic;EN_COURS_DE_TRAITEMENT
+8;fonctionnaire;2023-08-02T06:56:13;2023-08-02T06:55:08;24757;plic alias Blues;EN_COURS_DE_TRAITEMENT
+9;Dollar Métal;2023-08-02T18:06:06;2023-08-01T22:54:30;17668;Quai Latine;LIVREE
+10;coupable;2023-08-02T03:23:10;2023-08-02T07:52:13;15879;Vêtements Bahamas Kirghizistan;EN_COURS_DE_TRAITEMENT

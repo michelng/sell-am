@@ -1,0 +1,80 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191105",
+  "dto": "mapstruct",
+  "entityTableName": "employe",
+  "fields": [
+    {
+      "fieldName": "identifiant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateNaissance",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateEmbauche",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "telephone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salaire",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fonction",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutEmploi",
+      "fieldType": "StatutEmploi",
+      "fieldValues": "TEMPS_PLEIN,TEMPS_PARTIEL,STAGIAIRE"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "Statut",
+      "fieldValues": "ACTIF,INACTIF,PREMIUM"
+    }
+  ],
+  "name": "Employe",
+  "relationships": [
+    {
+      "otherEntityName": "vente",
+      "otherEntityRelationshipName": "employe",
+      "relationshipName": "vente",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entreprise",
+      "relationshipName": "entreprise",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

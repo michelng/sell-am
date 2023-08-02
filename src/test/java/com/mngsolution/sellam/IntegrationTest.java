@@ -1,6 +1,5 @@
 package com.mngsolution.sellam;
 
-import com.mngsolution.sellam.SellAmApp;
 import com.mngsolution.sellam.config.AsyncSyncConfiguration;
 import com.mngsolution.sellam.config.EmbeddedSQL;
 import java.lang.annotation.ElementType;

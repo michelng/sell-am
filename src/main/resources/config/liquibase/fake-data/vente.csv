@@ -1,0 +1,11 @@
+id;code;date_vente;commentaire;montant_total;statut_paiement
+1;Pop;2023-08-02T01:40:37;Magnifique;27583;EN_ATTENTE_DE_PAIEMENT
+2;retrait;2023-08-02T09:26:23;Boule Prêt;3936;PAYEE
+3;roi Allemagne Beauté;2023-08-02T00:44:54;Saucisses;28607;PARTIELLEMENT_PAYEE
+4;vert;2023-08-02T00:57:24;équipe;13550;EN_ATTENTE_DE_PAIEMENT
+5;sauf;2023-08-02T00:10:45;Essence dépôt Homme;26686;EN_RETARD_DE_PAIEMENT
+6;équipe retrait;2023-08-02T09:02:23;de safre;26223;PAYEE
+7;crac Femme Tandem;2023-08-02T11:45:38;Granit;13449;EN_ATTENTE_DE_PAIEMENT
+8;Béton Plastique;2023-08-02T09:17:34;émeraude Triporteur rose;22956;PARTIELLEMENT_PAYEE
+9;Tricycle;2023-08-02T11:17:17;paiement illo que;2944;PARTIELLEMENT_PAYEE
+10;Vêtements voile;2023-08-01T22:24:26;ah cause Maldives;12252;PARTIELLEMENT_PAYEE

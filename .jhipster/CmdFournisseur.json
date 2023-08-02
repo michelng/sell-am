@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191103",
+  "dto": "mapstruct",
+  "entityTableName": "cmd_fournisseur",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateCommande",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateLivraisonPrevue",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "montantTotal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutCmd",
+      "fieldType": "StatutCmd",
+      "fieldValues": "EN_COURS_DE_TRAITEMENT,LIVREE,EN_ATTENTE_DE_LIVRAISON"
+    }
+  ],
+  "name": "CmdFournisseur",
+  "relationships": [
+    {
+      "otherEntityName": "fournisseur",
+      "relationshipName": "fournisseur",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

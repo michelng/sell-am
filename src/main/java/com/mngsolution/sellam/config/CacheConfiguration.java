@@ -48,6 +48,28 @@ public class CacheConfiguration {
             createCache(cm, com.mngsolution.sellam.domain.User.class.getName());
             createCache(cm, com.mngsolution.sellam.domain.Authority.class.getName());
             createCache(cm, com.mngsolution.sellam.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mngsolution.sellam.domain.Article.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Categorie.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Client.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Client.class.getName() + ".factures");
+            createCache(cm, com.mngsolution.sellam.domain.CmdClient.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.CmdFournisseur.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Discount.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Employe.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Employe.class.getName() + ".ventes");
+            createCache(cm, com.mngsolution.sellam.domain.Entreprise.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Entreprise.class.getName() + ".employes");
+            createCache(cm, com.mngsolution.sellam.domain.Entreprise.class.getName() + ".magasins");
+            createCache(cm, com.mngsolution.sellam.domain.Facture.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Fournisseur.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.LigneCmdClient.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.LigneCmdFournisseur.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.LigneVente.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Magasin.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.MvtStck.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Promotion.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.RoleEmploye.class.getName());
+            createCache(cm, com.mngsolution.sellam.domain.Vente.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

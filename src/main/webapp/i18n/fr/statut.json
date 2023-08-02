@@ -1,0 +1,10 @@
+{
+  "sellAmApp": {
+    "Statut": {
+      "null": "",
+      "ACTIF": "ACTIF",
+      "INACTIF": "INACTIF",
+      "PREMIUM": "PREMIUM"
+    }
+  }
+}

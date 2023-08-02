@@ -1,0 +1,66 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191101",
+  "dto": "mapstruct",
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "identifiant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeClient",
+      "fieldType": "TypeClient",
+      "fieldValues": "PARTICULIER,ENTREPRISE"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "Statut",
+      "fieldValues": "ACTIF,INACTIF,PREMIUM"
+    },
+    {
+      "fieldName": "carteCredit",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Client",
+  "relationships": [
+    {
+      "otherEntityName": "facture",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "facture",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

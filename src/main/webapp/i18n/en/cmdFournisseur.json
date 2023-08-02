@@ -1,0 +1,30 @@
+{
+  "sellAmApp": {
+    "cmdFournisseur": {
+      "home": {
+        "title": "Cmd Fournisseurs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cmd Fournisseur",
+        "createOrEditLabel": "Create or edit a Cmd Fournisseur",
+        "notFound": "No Cmd Fournisseurs found"
+      },
+      "created": "A new Cmd Fournisseur is created with identifier { param }",
+      "updated": "A Cmd Fournisseur is updated with identifier { param }",
+      "deleted": "A Cmd Fournisseur is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cmd Fournisseur { id }?"
+      },
+      "detail": {
+        "title": "Cmd Fournisseur"
+      },
+      "id": "ID",
+      "code": "Code",
+      "dateCommande": "Date Commande",
+      "dateLivraisonPrevue": "Date Livraison Prevue",
+      "montantTotal": "Montant Total",
+      "commentaire": "Commentaire",
+      "statutCmd": "Statut Cmd",
+      "fournisseur": "Fournisseur"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191111",
+  "dto": "mapstruct",
+  "entityTableName": "ligne_vente",
+  "fields": [
+    {
+      "fieldName": "quantite",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "prixUnitaire",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "montantRemise",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "montantTotal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "taxe",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutVente",
+      "fieldType": "StatutVente",
+      "fieldValues": "COMPLETEE,EN_ATTENTE_DE_PAIEMENT,ANNULEE"
+    }
+  ],
+  "name": "LigneVente",
+  "relationships": [
+    {
+      "otherEntityName": "vente",
+      "relationshipName": "vente",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "article",
+      "relationshipName": "article",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

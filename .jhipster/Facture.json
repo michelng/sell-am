@@ -1,0 +1,50 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191107",
+  "dto": "mapstruct",
+  "entityTableName": "facture",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateFacture",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateEcheance",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "montantTotal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutPaiement",
+      "fieldType": "StatutPaiement",
+      "fieldValues": "EN_ATTENTE_DE_PAIEMENT,PARTIELLEMENT_PAYEE,EN_RETARD_DE_PAIEMENT,PAYEE"
+    }
+  ],
+  "name": "Facture",
+  "relationships": [
+    {
+      "otherEntityName": "vente",
+      "relationshipName": "vente",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "relationshipName": "client",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

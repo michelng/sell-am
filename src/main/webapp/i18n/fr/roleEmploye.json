@@ -1,0 +1,24 @@
+{
+  "sellAmApp": {
+    "roleEmploye": {
+      "home": {
+        "title": "RoleEmployes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Role Employe",
+        "createOrEditLabel": "Créer ou éditer un Role Employe",
+        "notFound": "Aucun Role Employe trouvé"
+      },
+      "created": "Un nouveau Role Employe a été créé avec l'identifiant { param }",
+      "updated": "Le Role Employe avec l'identifiant { param } a été mis à jour",
+      "deleted": "Le Role Employe avec l'identifiant { param } a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Role Employe { id } ?"
+      },
+      "detail": {
+        "title": "Role Employe"
+      },
+      "id": "ID",
+      "roleName": "Role Name"
+    }
+  }
+}

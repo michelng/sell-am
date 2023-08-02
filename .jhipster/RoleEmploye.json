@@ -1,0 +1,16 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191115",
+  "dto": "mapstruct",
+  "entityTableName": "role_employe",
+  "fields": [
+    {
+      "fieldName": "roleName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "RoleEmploye",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

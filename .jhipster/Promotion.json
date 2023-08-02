@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191114",
+  "dto": "mapstruct",
+  "entityTableName": "promotion",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Promotion",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

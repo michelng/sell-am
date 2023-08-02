@@ -1,0 +1,50 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191110",
+  "dto": "mapstruct",
+  "entityTableName": "ligne_cmd_fournisseur",
+  "fields": [
+    {
+      "fieldName": "quantite",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "prixUnitaire",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "dateLivraisonPrevu",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "montantTotal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutCmd",
+      "fieldType": "StatutCmd",
+      "fieldValues": "EN_COURS_DE_TRAITEMENT,LIVREE,EN_ATTENTE_DE_LIVRAISON"
+    }
+  ],
+  "name": "LigneCmdFournisseur",
+  "relationships": [
+    {
+      "otherEntityName": "cmdFournisseur",
+      "relationshipName": "cmdFournisseur",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "article",
+      "relationshipName": "article",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,7 @@
+export enum StatutVente {
+  COMPLETEE = 'COMPLETEE',
+
+  EN_ATTENTE_DE_PAIEMENT = 'EN_ATTENTE_DE_PAIEMENT',
+
+  ANNULEE = 'ANNULEE',
+}

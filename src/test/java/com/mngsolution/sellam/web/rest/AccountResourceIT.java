@@ -14,7 +14,6 @@ import com.mngsolution.sellam.security.AuthoritiesConstants;
 import com.mngsolution.sellam.service.UserService;
 import com.mngsolution.sellam.service.dto.AdminUserDTO;
 import com.mngsolution.sellam.service.dto.PasswordChangeDTO;
-import com.mngsolution.sellam.service.dto.UserDTO;
 import com.mngsolution.sellam.web.rest.vm.KeyAndPasswordVM;
 import com.mngsolution.sellam.web.rest.vm.ManagedUserVM;
 import java.time.Instant;

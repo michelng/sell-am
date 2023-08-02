@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191108",
+  "dto": "mapstruct",
+  "entityTableName": "fournisseur",
+  "fields": [
+    {
+      "fieldName": "identifiant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomResponsable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "raisonSociale",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "Statut",
+      "fieldValues": "ACTIF,INACTIF,PREMIUM"
+    }
+  ],
+  "name": "Fournisseur",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

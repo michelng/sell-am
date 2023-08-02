@@ -27,8 +27,8 @@ entity Employe {
     photo String,
     fonction String,
     statutEmploi StatutEmploi,
-    statut Statut,
-    entreprise Entreprise
+    statut Statut
+   
 }
 
 enum StatutEmploi {
@@ -54,22 +54,19 @@ entity Article {
     photo String,
     quantiteEnStock BigDecimal,
     seuilDeReapprovisionnement BigDecimal,
-    magasin Magasin,
-    categorie Categorie
+
 }
 
 entity Categorie {
     code String,
     designation String,
     description String,
-    categorieParent Categorie
 }
 
 entity MvtStck {
     dateMvnt Instant,
     quantite BigDecimal,
-    typeMvt TypeMvt,
-    article Article
+    typeMvt TypeMvt
 }
 
 enum TypeMvt {
@@ -85,9 +82,7 @@ entity LigneCmdFournisseur {
     dateLivraisonPrevu Instant,
     montantTotal BigDecimal,
     commentaire String,
-    statutCmd StatutCmd,
-    cmdFournisseur CmdFournisseur,
-    article Article
+    statutCmd StatutCmd
 }
 
 enum StatutCmd {
@@ -102,9 +97,7 @@ entity LigneCmdClient {
     dateLivraisonPrevue Instant,
     montantTotal BigDecimal,
     commentaire String,
-    statutCmd StatutCmd,
-    cmdClient CmdClient,
-    article Article
+    statutCmd StatutCmd
 }
 
 entity LigneVente {
@@ -115,10 +108,6 @@ entity LigneVente {
     taxe BigDecimal,
     commentaire String,
     statutVente StatutVente,
-    vente Vente,
-    article Article,
-    discount Discount,
-    promotion Promotion
 }
 
 enum StatutVente {
@@ -133,8 +122,7 @@ entity CmdFournisseur {
     dateLivraisonPrevue Instant,
     montantTotal BigDecimal,
     commentaire String,
-    statutCmd StatutCmd,
-    fournisseur Fournisseur
+    statutCmd StatutCmd
 }
 
 entity CmdClient {
@@ -143,8 +131,7 @@ entity CmdClient {
     dateLivraisonPrevue Instant,
     montantTotal BigDecimal,
     commentaire String,
-    statutCmd StatutCmd,
-    client Client
+    statutCmd StatutCmd
 }
 
 entity Fournisseur {
@@ -190,11 +177,7 @@ entity Vente {
     dateVente Instant,
     commentaire String,
     montantTotal BigDecimal,
-    statutVente StatutVente,
-    modeDePaiement ModeDePaiement,
-    client Client,
-    orderStatus OrderStatus,
-    user User
+    statutPaiement StatutPaiement
 }
 
 entity Facture {
@@ -203,11 +186,10 @@ entity Facture {
     dateEcheance Instant,
     montantTotal BigDecimal,
     commentaire String,
-    statutFacture StatutFacture,
-    vente Vente
+    statutPaiement StatutPaiement
 }
 
-enum ModeDePaiement {
+enum StatutPaiement {
     EN_ATTENTE_DE_PAIEMENT,
     PARTIELLEMENT_PAYEE,
     EN_RETARD_DE_PAIEMENT,

@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191100",
+  "dto": "mapstruct",
+  "entityTableName": "categorie",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Categorie",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

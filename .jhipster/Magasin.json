@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191112",
+  "dto": "mapstruct",
+  "entityTableName": "magasin",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "raisonSociale",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Magasin",
+  "relationships": [
+    {
+      "otherEntityName": "entreprise",
+      "relationshipName": "entreprise",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

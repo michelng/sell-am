@@ -1,0 +1,57 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802191059",
+  "dto": "mapstruct",
+  "entityTableName": "article",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prixUnitaireHt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "tauxTva",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "prixUnitaireTtc",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantiteEnStock",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "seuilDeReapprovisionnement",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "Article",
+  "relationships": [
+    {
+      "otherEntityName": "magasin",
+      "relationshipName": "magasin",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "categorie",
+      "relationshipName": "categorie",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

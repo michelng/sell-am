@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity LigneCmdClient.
+    -->
+    <changeSet id="20230802191109-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="cmd_client_id"
+                                 baseTableName="ligne_cmd_client"
+                                 constraintName="fk_ligne_cmd_client__cmd_client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cmd_client"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="article_id"
+                                 baseTableName="ligne_cmd_client"
+                                 constraintName="fk_ligne_cmd_client__article_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="article"
+                                 />
+    </changeSet>
+</databaseChangeLog>

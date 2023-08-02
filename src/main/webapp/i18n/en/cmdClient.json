@@ -1,0 +1,30 @@
+{
+  "sellAmApp": {
+    "cmdClient": {
+      "home": {
+        "title": "Cmd Clients",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cmd Client",
+        "createOrEditLabel": "Create or edit a Cmd Client",
+        "notFound": "No Cmd Clients found"
+      },
+      "created": "A new Cmd Client is created with identifier { param }",
+      "updated": "A Cmd Client is updated with identifier { param }",
+      "deleted": "A Cmd Client is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cmd Client { id }?"
+      },
+      "detail": {
+        "title": "Cmd Client"
+      },
+      "id": "ID",
+      "code": "Code",
+      "dateCommande": "Date Commande",
+      "dateLivraisonPrevue": "Date Livraison Prevue",
+      "montantTotal": "Montant Total",
+      "commentaire": "Commentaire",
+      "statutCmd": "Statut Cmd",
+      "client": "Client"
+    }
+  }
+}
