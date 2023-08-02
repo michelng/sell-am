@@ -1,0 +1,264 @@
+entity Entreprise {
+    nom String,
+    raisonSociale String,
+    telephone1 String,
+    telephone2 String,
+    email String,
+    logo String,
+    description String,
+    sitWeb String,
+    statut Statut
+}
+
+entity RoleEmploye {
+    roleName String
+}
+
+entity Employe {
+    identifiant String,
+    nom String,
+    prenom String,
+    dateNaissance Instant,
+    dateEmbauche Instant,
+    telephone1 String,
+    telephone2 String,
+    email String,
+    salaire BigDecimal,
+    photo String,
+    fonction String,
+    statutEmploi StatutEmploi,
+    statut Statut,
+    entreprise Entreprise
+}
+
+enum StatutEmploi {
+    TEMPS_PLEIN, TEMPS_PARTIEL, STAGIAIRE
+}
+
+entity Magasin {
+    nom String,
+    raisonSociale String,
+    telephone1 String,
+    telephone2 String,
+    email String,
+    logo String,
+    description String
+}
+
+entity Article {
+    code String,
+    designation String,
+    prixUnitaireHt BigDecimal,
+    tauxTva BigDecimal,
+    prixUnitaireTtc BigDecimal,
+    photo String,
+    quantiteEnStock BigDecimal,
+    seuilDeReapprovisionnement BigDecimal,
+    magasin Magasin,
+    categorie Categorie
+}
+
+entity Categorie {
+    code String,
+    designation String,
+    description String,
+    categorieParent Categorie
+}
+
+entity MvtStck {
+    dateMvnt Instant,
+    quantite BigDecimal,
+    typeMvt TypeMvt,
+    article Article
+}
+
+enum TypeMvt {
+    ENTREE_DE_STOCK,
+    SORTIE_DE_STOCK,
+    TRANSFERT_DE_STOCK,
+    AJUSTEMENT_D_INVENTAIRE
+}
+
+entity LigneCmdFournisseur {
+    quantite BigDecimal,
+    prixUnitaire BigDecimal,
+    dateLivraisonPrevu Instant,
+    montantTotal BigDecimal,
+    commentaire String,
+    statutCmd StatutCmd,
+    cmdFournisseur CmdFournisseur,
+    article Article
+}
+
+enum StatutCmd {
+    EN_COURS_DE_TRAITEMENT,
+    LIVREE,
+    EN_ATTENTE_DE_LIVRAISON
+}
+
+entity LigneCmdClient {
+    quantite BigDecimal,
+    prixUnitaire BigDecimal,
+    dateLivraisonPrevue Instant,
+    montantTotal BigDecimal,
+    commentaire String,
+    statutCmd StatutCmd,
+    cmdClient CmdClient,
+    article Article
+}
+
+entity LigneVente {
+    quantite BigDecimal,
+    prixUnitaire BigDecimal,
+    montantRemise BigDecimal,
+    montantTotal BigDecimal,
+    taxe BigDecimal,
+    commentaire String,
+    statutVente StatutVente,
+    vente Vente,
+    article Article,
+    discount Discount,
+    promotion Promotion
+}
+
+enum StatutVente {
+    COMPLETEE,
+    EN_ATTENTE_DE_PAIEMENT,
+    ANNULEE
+}
+
+entity CmdFournisseur {
+    code String,
+    dateCommande Instant,
+    dateLivraisonPrevue Instant,
+    montantTotal BigDecimal,
+    commentaire String,
+    statutCmd StatutCmd,
+    fournisseur Fournisseur
+}
+
+entity CmdClient {
+    code String,
+    dateCommande Instant,
+    dateLivraisonPrevue Instant,
+    montantTotal BigDecimal,
+    commentaire String,
+    statutCmd StatutCmd,
+    client Client
+}
+
+entity Fournisseur {
+    identifiant String,
+    nomResponsable String,
+    raisonSociale String,
+    telephone1 String,
+    telephone2 String,
+    email String,
+    logo String,
+    description String,
+    statut Statut
+}
+
+entity Client {
+    identifiant String,
+    nom String,
+    prenom String,
+    telephone1 String,
+    telephone2 String,
+    email String,
+    photo String,
+    description String,
+    typeClient TypeClient,
+    statut Statut,
+    carteCredit String,
+    //adresseFacturation Adresse
+}
+
+enum TypeClient {
+    PARTICULIER,
+    ENTREPRISE
+}
+
+enum Statut {
+    ACTIF,
+    INACTIF,
+    PREMIUM
+}
+
+entity Vente {
+    code String,
+    dateVente Instant,
+    commentaire String,
+    montantTotal BigDecimal,
+    statutVente StatutVente,
+    modeDePaiement ModeDePaiement,
+    client Client,
+    orderStatus OrderStatus,
+    user User
+}
+
+entity Facture {
+    numero String,
+    dateFacture Instant,
+    dateEcheance Instant,
+    montantTotal BigDecimal,
+    commentaire String,
+    statutFacture StatutFacture,
+    vente Vente
+}
+
+enum ModeDePaiement {
+    EN_ATTENTE_DE_PAIEMENT,
+    PARTIELLEMENT_PAYEE,
+    EN_RETARD_DE_PAIEMENT,
+    PAYEE
+}
+
+entity Discount {
+    code String,
+    description String,
+    montant BigDecimal,
+    // Autres attributs pour la gestion des remises
+    // ...
+}
+
+entity Promotion {
+    code String,
+    description String,
+    dateDebut Instant,
+    dateFin Instant,
+    // Autres attributs pour la gestion des promotions
+    // ...
+}
+
+
+// Définition des liaisons (relations) entre les entités
+relationship ManyToOne {
+    Article{magasin} to Magasin
+    Article{categorie} to Categorie
+    MvtStck{article} to Article
+    LigneCmdFournisseur{cmdFournisseur} to CmdFournisseur
+    LigneCmdFournisseur{article} to Article
+    LigneCmdClient{cmdClient} to CmdClient
+    LigneCmdClient{article} to Article
+    LigneVente{vente} to Vente
+    LigneVente{article} to Article
+    CmdFournisseur{fournisseur} to Fournisseur
+    CmdClient{client} to Client
+    Vente{client} to Client
+    Facture{vente} to Vente
+}
+
+// Définition des relations OneToMany
+relationship OneToMany {
+    Entreprise to Employe{entreprise}
+    Entreprise to Magasin{entreprise}
+    Employe to Vente{employe}
+    Client to Facture{client}
+}
+
+// Utilisation des Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Paramétrage des options du service pour toutes les entités sauf quelques-unes
+service all with serviceImpl
